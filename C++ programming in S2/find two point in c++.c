@@ -1,0 +1,31 @@
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+ struct point{
+  int x;
+  int y;
+ }
+ void input(point & p){
+   cout<<"input x:";cin>>p.x;
+   cout<<"input y";cin>>p.y;
+ }
+ void output(point p){
+  cout<<"("<<p.x<<,<<p.y")"<<endl;
+ }
+ float distance (point a, point b){
+ }
+  int main (){
+    point a,b;
+    float d;
+    cout<<" Enter value f a:"<<endl;
+    input(a);
+    cout<<"Enter value of b:"<<endl;
+    input(b);
+    cout<<"Value of point b";
+    output(b);
+     d=sqrt(pow((a.x-b.x),2) + pow((a.y-b.y),2));
+    cout<<" The value of Distance="<<d;
+    getch();
+    }
+
+

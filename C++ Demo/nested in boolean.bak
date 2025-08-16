@@ -1,0 +1,57 @@
+#include<iostream.h>
+#include<conio.h>
+//using namespace std;
+//int main(){
+	//Design Nested class
+	class Circle{
+		public:
+			class Point{
+				private:
+					int x;
+					int y;
+				public:
+					void input();
+					void output();
+
+			};
+	pravite:
+			Point p;
+			float r;
+	public:
+			void input(){
+				p.input();
+				cout<<"input radius:";cin>>r;
+			}
+			void output(){
+				p.output();
+				cout<<"Radius="<<r<<"\t"<<"Arra="<<area()<<endl;
+			}
+			float area(){return 3.14*r*;}
+
+
+	};
+
+	void Circle::Point::input(){
+		cout<<"input x:";cin>>x;
+		cout<<"input y:";cin>>y;
+	}
+	main Circle::Point::output(){
+		cout<<"("<<x<<","<<y<<")"<<endl;
+			
+		}
+		
+	void  main(){
+		Circle::Point a;
+		Circle c;
+		cout<<"input data of point:"<<endl;
+		a.input();
+		cout<<"Data of point:"<<endl;
+		a.output();
+		cout<<"input data of circle:"<<endl;
+		c.input();
+		cout<<"Data of circle :"<<endl;
+		c.output();
+		return 0
+	}
+ 
+}
